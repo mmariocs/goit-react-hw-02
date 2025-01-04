@@ -1,14 +1,14 @@
 import React from "react";
 import s from "./Feedback.module.css";
-const Feedback = ({ feedback, totalFeedback, positiveFeedback }) => {
+const Feedback = ({ votingData, totalFeedback, positiveFeedback }) => {
   return (
     <div>
       <ul className={s.list}>
-        <li className={s.item}>Good: {feedback.good}</li>
-        <li className={s.item}>Neutral: {feedback.neutral}</li>
-        <li className={s.item}>Bad: {feedback.bad}</li>
-        <li className={s.item}>Total feedback: {totalFeedback}</li>
-        <li className={s.item}>Positive feedback: {positiveFeedback}%</li>
+        <li>Good: {votingData.good} </li>
+        <li>Neutral: {votingData.neutral}</li>
+        <li>Bad: {votingData.bad}</li>
+        <li>Total: {totalFeedback}</li>
+        <li>Positive: {positiveFeedback}%</li>
       </ul>
     </div>
   );

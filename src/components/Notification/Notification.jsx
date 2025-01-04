@@ -1,8 +1,7 @@
 import React from "react";
-import s from "./Notification.module.css";
 
-function Notification({ message }) {
-  return <p className={s.notification}>{message}</p>;
-}
+const Notification = () => {
+  return <div>No feedback yet</div>;
+};
 
 export default Notification;
